@@ -1,3 +1,14 @@
+## Authentication with Firebase v9
+## Redux
+## useContext
+## React icons
+## Bootstrap
+## LocalStorage
+## Styled Components
+![](Animation.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
