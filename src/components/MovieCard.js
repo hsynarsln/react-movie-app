@@ -9,6 +9,7 @@ const defaultImage = 'https://images.unsplash.com/photo-1581905764498-f1b60bae94
 
 const MovieCard = movie => {
   const { title, poster_path, overview, vote_average } = movie;
+  // console.log(movie);
   const { currentUser } = useContext(AuthContext);
   // console.log(currentUser);
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const MovieCard = movie => {
 
   const addFavoriteMovie = e => {
     e.preventDefault();
-    console.log(movie);
+    // console.log(movie);
     dispatch(addMovieApi(movie));
   };
 
@@ -37,10 +38,12 @@ const MovieCard = movie => {
         <h3>{title}</h3>
         {currentUser && <span className={`tag ${setVoteClass(vote_average)}`}>{vote_average}</span>}
       </div>
-      <div className='movie-over' style={{ maxHeight: '50%' }}>
-        <h2>Overview</h2>
-        <p>{overview}</p>
-      </div>
+      {currentUser && (
+        <div className='movie-over' style={{ maxHeight: '50%' }}>
+          <h2>Overview</h2>
+          <p>{overview}</p>
+        </div>
+      )}
     </div>
   );
 };

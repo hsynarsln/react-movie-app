@@ -29,7 +29,7 @@ const Header = () => {
 
   const goFavPage = e => {
     e.preventDefault();
-    navigate('/Favourite');
+    navigate('/favourite');
   };
 
   return (
@@ -51,8 +51,8 @@ const Header = () => {
               <span>FAVOURITE MOVIES</span>
             </a>
           </NavMenu>
+          <h3 style={{ fontSize: '1rem' }}>{currentUser.displayName}</h3>
           <SignOut>
-            <h3 style={{ fontSize: '1rem' }}>{currentUser.displayName}</h3>
             <UserImg src='/images/user.svg' alt={currentUser.displayName} />
             <Dropdown>
               <span onClick={() => signOutFunc()}>Sign out</span>
@@ -183,7 +183,7 @@ const Dropdown = styled.div`
 const SignOut = styled.div`
   position: relative;
   height: 48px;
-  width: 350px;
+  margin-right: 20px;
   display: flex;
   cursor: pointer;
   align-items: center;
