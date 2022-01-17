@@ -1,10 +1,10 @@
-#Authentication with Firebase v9
-##Redux
-###useContext
-####React icons
-#####Bootstrap
-######LocalStorage
-#######Styled Components
+# Authentication with Firebase v9
+## Redux
+### useContext
+#### React icons
+##### Bootstrap
+###### LocalStorage
+####### Styled Components
 ![](Animation.gif)
 
 
