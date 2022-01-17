@@ -5,7 +5,7 @@ React icons
 Bootstrap
 LocalStorage
 Styled Components
-![ Alt text](animation. gif) / ! [](animation. gif)
+![ Alt text](Animation. gif) / ! [](Animation. gif)
 
 
 
