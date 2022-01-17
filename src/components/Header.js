@@ -46,8 +46,8 @@ const Header = () => {
             <a href='/home' onClick={goHomePage}>
               <span>REACT MOVIES</span>
             </a>
-            <a href='/Favourite'>
-              {currentUser && <AiFillStar onClick={goFavPage} style={{ fontSize: '2rem', cursor: 'pointer' }} />}
+            <a onClick={goFavPage}>
+              <AiFillStar style={{ fontSize: '2rem', cursor: 'pointer' }} />
               <span>FAVOURITE MOVIES</span>
             </a>
           </NavMenu>

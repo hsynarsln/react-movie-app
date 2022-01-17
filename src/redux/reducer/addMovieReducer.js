@@ -7,8 +7,8 @@ const initialState = {
 export const addMovieReducer = (state = initialState.movie, action) => {
   switch (action.type) {
     case ADD_MOVIE:
-      console.log(action.payload);
-      console.log(state);
+      // console.log(action.payload);
+      // console.log(state);
       if (state == null) {
         return [...state, action.payload];
       }
